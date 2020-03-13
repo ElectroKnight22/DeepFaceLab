@@ -34,4 +34,3 @@ def get_screen_size():
         pass
         
     return (1366, 768)
-        

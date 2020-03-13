@@ -82,9 +82,6 @@ class SampleGeneratorFace(SampleGeneratorBase):
         return self
 
     def __next__(self):
-        if not self.initialized:
-            return []
-            
         self.generator_counter += 1
         generator = self.generators[self.generator_counter % len(self.generators) ]
         return next(generator)
